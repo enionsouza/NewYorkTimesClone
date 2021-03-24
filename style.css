@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://g1.nyt.com/fonts/family/cheltenham-small/cheltenham-small-normal-400.108ce298d451197b23fefceb3e36959f.woff2");
 
 * {
   margin: 0 auto;
@@ -296,4 +297,49 @@ div.picture > div.figcaption em {
   font-style: normal;
   font-size: 0.9em;
   color: #505a619c;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    position: relative;
+  }
+
+  body > aside {
+    max-width: 200px;
+    position: absolute;
+    top: 150em;
+    left: calc((55% + 300px));
+    z-index: 1;
+  }
+
+  div.aside-img > a {
+    display: flex;
+    margin: 15px auto;
+    text-decoration: none;
+  }
+
+  div.aside-img img {
+    width: 75px;
+    height: 75px;
+    margin-right: 5px;
+  }
+
+  div.aside-img p.caption {
+    font-family: nyt-cheltenham-small;
+    font-size: 0.7em;
+    line-height: 1.2em;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+  }
+
+  div.aside-img > a:hover > p {
+    text-decoration: underline;
+  }
+
+  aside > div.aside-title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: small;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
 }
