@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1600px;
+}
+
+nav {
+  font-size: 14.25px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#navbar-right > span {
+  display: inline-block;
+}
+
+.black {
+  color: black;
+}
+
+.btn {
+  background-color: rgb(50, 104, 145);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.btn > a {
+  display: inline-block;
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.8em;
+}
+
+header {
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header > div > h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2em;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  width: 500px;
+  padding-bottom: 0.75em;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 5px;
+}
+
+ul > li > a {
+  position: relative;
+  display: inline-block;
+  margin: 25px 5px;
+  background-color: #eeeeee;
+}
+
+ul > li > a > svg {
+  position: relative;
+  z-index: 2;
+  background-color: inherit;
+}
+
+div.circle {
+  width: 25px;
+  height: 25px;
+  border: 0.5px solid transparent;
+  border-radius: 50%;
+  background-color: inherit;
+  position: absolute;
+}
+
+ul > li > a:hover > svg,
+ul > li > a:hover {
+  background-color: transparent;
+}
+
+ul > li > a:hover > div.circle {
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+}
+
+header > ul {
+  position: relative;
+  left: -16.5%;
+}
+
+div#circle-fb {
+  top: -4px;
+  left: -8px;
+}
+
+div#circle-wu {
+  top: -4px;
+  left: -4px;
+}
+div#circle-tt {
+  top: -4px;
+  left: -6px;
+}
+div#circle-em {
+  top: -3px;
+  left: -5px;
+}
+div#circle-share {
+  top: -3px;
+  left: -4px;
+}
+
+header > img {
+  width: 100%;
+}
+
+header > figcaption {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5em;
+  color: #333;
+}
+
+.main-container {
+  margin-top: 200px;
+}
+
+.advertisement {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 75px;
+  color: rgba(50, 50, 50, 0.5);
+  text-align: center;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(228, 228, 228, 0.5);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.6em;
+}
+
+div.text {
+  max-width: 600px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+div.text > p {
+  margin: 20px auto;
+  letter-spacing: 75%;
+}
+
+div.subscribe {
+  text-align: center;
+  height: 110px;
+}
+
+div.subscribe > * {
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95em;
+  display: inline-block;
+}
+
+div.subscribe > a {
+  font-weight: bold;
+  color: #326891;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+div.subscribe > strong {
+  margin-top: 16px;
+}
+
+div.the-theory {
+  width: 950px;
+  position: relative;
+}
+
+p.labels {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(25, 25, 25);
+  margin: auto;
+  position: absolute;
+  width: 200px;
+}
+
+.the-theory-img {
+  width: 100%;
+}
+
+p#TI-01 {
+  top: 200px;
+  left: 20px;
+}
+
+p#TI-02 {
+  top: 200px;
+  left: 250px;
+}
+
+p#TI-03 {
+  top: 200px;
+  left: 500px;
+}
+
+p#TI-04 {
+  top: 200px;
+  left: 750px;
+}
+
+p#TI-05 {
+  top: 480px;
+  left: 20px;
+}
+
+p#TI-06 {
+  top: 480px;
+  left: 250px;
+}
+
+p#TI-07 {
+  top: 480px;
+  left: 500px;
+}
+
+p#TI-08 {
+  top: 480px;
+  left: 750px;
+}
+
+div#video {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div#video > div.caption {
+  width: 560px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+
+div#video > div.caption em {
+  font-style: normal;
+  font-size: 0.9em;
+  color: #505a619c;
+}
+
+div.picture > img {
+  width: 100%;
+}
+
+div.picture > div.figcaption {
+  width: 560px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+  font-size: 0.7em;
+  line-height: normal;
+}
+
+div.picture > div.figcaption em {
+  font-style: normal;
+  font-size: 0.9em;
+  color: #505a619c;
+}
