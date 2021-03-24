@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 @import url("https://g1.nyt.com/fonts/family/cheltenham-small/cheltenham-small-normal-400.108ce298d451197b23fefceb3e36959f.woff2");
+@import url("https://g1.nyt.com/fonts/family/franklin/franklin-normal-500.d6c06a3d84a57100edad5bf9b84ff739.woff2");
+@import url("https://g1.nyt.com/fonts/family/franklin/franklin-normal-600.abe1b34d5a429f8e034860c86c483446.woff2");
+@import url("https://g1.nyt.com/fonts/family/franklin/franklin-normal-700.b44c88f09ca7ce914b836d4ae72891b8.woff2");
+@import url("https://g1.nyt.com/fonts/family/cheltenham-small/cheltenham-small-normal-400.108ce298d451197b23fefceb3e36959f.woff2");
 
 * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   max-width: 1600px;
+}
+
+a {
+  color: #326891;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 nav {
@@ -299,14 +312,19 @@ div.picture > div.figcaption em {
   color: #505a619c;
 }
 
+body > aside {
+  visibility: hidden;
+  position: absolute;
+}
+
 @media screen and (min-width: 1100px) {
   body {
     position: relative;
   }
 
   body > aside {
+    visibility: visible;
     max-width: 200px;
-    position: absolute;
     top: 150em;
     left: calc((55% + 300px));
     z-index: 1;
@@ -342,4 +360,179 @@ div.picture > div.figcaption em {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
   }
+}
+
+section#suggestions-container {
+  width: 1200px;
+  display: grid;
+  grid-template:
+    "newsletters         most-popular" auto
+    "space-and-astronomy most-popular" auto
+    "editors-picks       most-popular" auto
+    / 2.5fr 1fr;
+}
+
+section#suggested-newsletters {
+  grid-area: newsletters;
+}
+
+section#more-in-space-and-astronomy {
+  grid-area: space-and-astronomy;
+}
+
+section#editors-picks {
+  grid-area: editors-picks;
+}
+
+section#suggested-newsletters,
+section#more-in-space-and-astronomy,
+section#editors-picks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  border-top: 1px solid black;
+  align-items: stretch;
+}
+
+div.section-title {
+  width: 100%;
+  position: relative;
+}
+
+div.section-title > h4 {
+  position: absolute;
+  left: 10px;
+  top: -25px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+div.section-title > a {
+  position: absolute;
+  top: -22px;
+  right: 10px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: #777;
+  font-size: small;
+  text-decoration: none;
+}
+
+div.container-flex {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 240px;
+}
+
+.article-suggested {
+  border: 1px solid #eee;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 30px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.article-suggested > p.attendance {
+  text-transform: uppercase;
+  font-family: nyt-cheltenham-small, georgia, "times new roman";
+  font-size: small;
+  color: #333;
+}
+
+.article-suggested > img {
+  width: 75px;
+  height: auto;
+}
+
+.article-suggested > .circle-plus-sign {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.article-suggested:hover > .circle-plus-sign {
+  background-color: #333;
+}
+
+.article-suggested > .plus-sign {
+  font-weight: bold;
+  font-size: x-large;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.article-suggested:hover > .plus-sign {
+  color: white;
+}
+
+.article-suggested:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px #eee, 0 6px 20px #eee;
+}
+
+.article-suggested > a {
+  position: absolute;
+  bottom: 10px;
+}
+
+.article-space-and-astronomy,
+.article-editors-picks {
+  width: 250px;
+  margin: 5px auto;
+}
+
+.article-space-and-astronomy img,
+.article-editors-picks img {
+  width: 100%;
+}
+
+article figcaption {
+  font-family: nyt-cheltenham-small, georgia, "times new roman";
+  color: rgb(153, 153, 153);
+  font-size: xx-small;
+  text-align: right;
+}
+
+.article-space-and-astronomy > p,
+.article-editors-picks > p {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: #333;
+  font-size: small;
+}
+
+section#most-popular {
+  grid-area: most-popular;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  border-top: 1px solid black;
+}
+
+section#most-popular > div > h4 {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+div.most-popular-headlines {
+  padding: 20px;
+  border-top: 1px solid #e2e2e2;
+}
+
+div.most-popular-headlines > h5 {
+  font-family: "times new roman";
+  font-size: 1.2em;
+}
+div.most-popular-headlines > h5:hover {
+  color: #888;
+  cursor: pointer;
 }
