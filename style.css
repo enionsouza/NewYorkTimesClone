@@ -532,7 +532,17 @@ div.most-popular-headlines > h5 {
   font-family: "times new roman";
   font-size: 1.2em;
 }
+
+.article-space-and-astronomy > a > h5:hover,
+.article-editors-picks > a > h5:hover,
 div.most-popular-headlines > h5:hover {
   color: #888;
   cursor: pointer;
+}
+
+.article-space-and-astronomy > a,
+.article-editors-picks > a,
+div.most-popular-headlines > a {
+  color: black;
+  text-decoration: none;
 }
