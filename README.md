@@ -12,7 +12,7 @@
 
 _The original page can be seen [here](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0)._
 
-![screenshot](.img/screenshot.png)
+![screenshot](img/screenshot.png)
 
 Additional description about the project and its features.
 
