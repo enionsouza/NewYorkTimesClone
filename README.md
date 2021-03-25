@@ -8,6 +8,8 @@
 - Embedding images
 - The box model
 - Flexbox
+- Grid
+- Floats
 - Positioning
 
 _The original page can be seen [here](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0)._
