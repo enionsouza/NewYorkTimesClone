@@ -97,6 +97,10 @@ footer li {
   list-style: none;
 }
 
+form li {
+  list-style: none;
+}
+
 ul.contact-logos > li {
   display: inline-block;
   margin: 5px;
@@ -777,6 +781,11 @@ div.bottomline {
   border-top: 1px double #bbb;
 }
 
+.fieldset-send > ul {
+  display: flex;
+  flex-direction: row;
+}
+
 div.bottomline > ul {
   display: flex;
   flex-direction: row;
@@ -793,4 +802,85 @@ div.column > h3 {
 ul.contact-logos > li > a:hover > svg,
 ul.contact-logos > li > a:hover {
   background-color: transparent;
+}
+
+form {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  position: relative;
+  bottom: 20px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+form > fieldset {
+  border: none;
+}
+
+.fieldset-inputs li > textarea {
+  height: 6.5em;
+}
+
+.fieldset-inputs li > textarea,
+.fieldset-inputs li > input {
+  width: 100%;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 1em;
+  padding: 0.25em;
+  margin-bottom: 15px;
+}
+
+.check-subscription > label {
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+}
+
+.fieldset-inputs li > label {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.radio-btn {
+  display: inline-block;
+  width: 120px;
+}
+
+.fieldset-send {
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.check-subscription {
+  position: relative;
+  top: 15px;
+  font-size: 1em;
+}
+
+.fieldset-send button {
+  width: 100px;
+  height: 3em;
+  font-size: 1em;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.fieldset-send button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(0.75);
+  position: relative;
+  top: 4px;
 }

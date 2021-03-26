@@ -712,6 +712,76 @@
       </div>
     </main>
 
+    <form action="#" method="post">
+      <fieldset class="fieldset-inputs">
+        <ul>
+          <li>
+            <label for="name"> Name: </label>
+            <input
+              type="text"
+              name="user_name"
+              id="name"
+              required
+              placeholder="John Doe"
+            />
+          </li>
+          <li>
+            <label for="email"> E-mail: </label>
+            <input
+              type="email"
+              name="user_email"
+              id="email"
+              required
+              placeholder="jdoe@email.com"
+            />
+          </li>
+          <li>
+            <label for="comments">
+              Please write below any comments or suggestions about this article:
+            </label>
+            <textarea
+              name="user_message"
+              id="comments"
+              placeholder="Type your comment here…"
+              required
+              maxlength="250"
+              minlength="20"
+            ></textarea>
+          </li>
+          <li>
+            <label> What is your overall opinion about this article? </label>
+            <div class="radio-btns">
+              <span class="radio-btn">
+                <input type="radio" name="user_opinion" value="positive" />
+                positive
+              </span>
+              <span class="radio-btn">
+                <input type="radio" name="user_opinion" value="neutral" />
+                neutral
+              </span>
+              <span class="radio-btn">
+                <input type="radio" name="user_opinion" value="negative" />
+                negative
+              </span>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="fieldset-send">
+        <ul>
+          <li class="check-subscription">
+            <input type="checkbox" name="user_subscription" id="subscription" />
+            <label for="subscription">
+              <em> I want to subscribe to the newsletter </em>
+            </label>
+          </li>
+          <li>
+            <button type="submit">Send</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
     <aside>
       <div class="aside-title">
         <h2>Editor's Picks</h2>
